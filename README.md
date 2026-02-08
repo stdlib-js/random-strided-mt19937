@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-strided-mt19937/tags). For example,
+
+```javascript
 import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray, ndarray, normalized } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@v0.2.2-deno/mod.js';
+import { ndarray, ndarray, normalized } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@deno/mod.js';
 ```
 
 #### mt19937( N, out, so\[, options] )
@@ -210,7 +215,7 @@ The function accepts the same `options` as documented above for `mt19937()`.
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@v0.2.2-deno/mod.js';
+import mt19937 from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-strided-mt19937@deno/mod.js';
 
 // Specify a PRNG seed:
 var opts = {
